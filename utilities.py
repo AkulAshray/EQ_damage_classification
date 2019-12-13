@@ -53,12 +53,11 @@ def plot_confusion_matrix(cm, classes,normalize=True, title='Confusion matrix', 
     plt.xlabel('Predicted label')
     
 
-def print_class(m, y_pred):
+def print_class(m, y_pred, y_test, labels):
     res = [format(accuracy_score(y_true=y_test, y_pred=y_pred),'.4f'), 
            format(precision_score(y_true=y_test, y_pred=y_pred, average='weighted' ), '.4f'),
            format(recall_score(y_true=y_test, y_pred=y_pred, average='weighted'), '.4f'), 
            format(f1_score(y_true=y_test, y_pred=y_pred, average='weighted'),'.4f')]
-    if hasattr(m, 'oob_score_'): res.append(m.oob_score_)
     cm = confusion_matrix(y_test, y_pred)
     plt.figure(figsize=(8,8))
     plt.grid(b=False)
