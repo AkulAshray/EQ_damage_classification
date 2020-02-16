@@ -37,6 +37,7 @@ Government agencies : government bodies can get a closer and faster approximated
 
 Insurers : After a large scale disaster claims systems of Insurers are overwhelmed with large number of new claims.It become harder for claim handlers to go through all of the damage data and decide the damage severity.Integrating claims system with AI based damage assessment services will help claim handlers to look over a single index(damage grade) and decide the severity of damage.Which in terms can results in faster claims processing.
 
+SHAP values can be used to succesfully reduce features in the model to reduce the complexity. It can also be used to help find out which features among others are most important.
 
 
 # Appendix:
